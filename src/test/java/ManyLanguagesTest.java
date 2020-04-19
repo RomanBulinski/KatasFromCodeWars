@@ -20,7 +20,7 @@ public class ManyLanguagesTest {
         map2.put("Hindi", 60);
         map2.put("Dutch", 93);
         map2.put("Greek", 71);
-        assertEquals(Arrays.asList("Dutch", "Greek", "Hindi"), ManyLanguages.myLanguages(map2));
+    assertEquals(Arrays.asList("Dutch", "Greek", "Hindi"), ManyLanguages.myLanguages(map2));
         final Map<String, Integer> map3 = new HashMap<>();
         map3.put("C++", 50);
         map3.put("ASM", 10);

@@ -6,18 +6,25 @@ public class ManyLanguages {
 
     public static List<String> myLanguages(final Map<String, Integer> results) {
 
-        List<String> languageList = new ArrayList<>();
+        List<String> queue = results.values()
+                .stream()
+                .filter(x -> x >= 60)
+                .sorted(Collections.reverseOrder())
+                .map(y -> change(y, results))
+                .collect(toList());
+
+        return queue;
+    }
+
+    private static String change(Integer i, Map<String, Integer> results) {
+        String res = null;
         Set<String> languages = results.keySet();
-        Collection<Integer> valuesForLanguages = results.values();
-        List<Integer> cue = valuesForLanguages.stream().filter(x -> x >= 60).sorted(Collections.reverseOrder()).collect(toList());
-        for (Integer s : cue) {
-            for ( String  str :languages  ) {
-                if( s.equals( results.get( str )   )   ){
-                    languageList.add(str);
-                }
+        for (String str : languages) {
+            if (i.equals(results.get(str))) {
+                res = str;
             }
         }
-        return languageList;
+        return res;
     }
 
 
