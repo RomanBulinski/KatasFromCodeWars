@@ -14,3 +14,15 @@ Examples
 {"Java" => 10, "Ruby" => 80, "Python" => 65}   -->  ["Ruby", "Python"]
 {"Hindi" => 60, "Dutch" => 93, "Greek" => 71}  -->  ["Dutch", "Greek", "Hindi"]
 {"C++" => 50, "ASM" => 10, "Haskell" => 20}    -->  []
+
+
+
+Halving Sum
+Task
+Given a positive integer n, calculate the following sum:
+
+n + n/2 + n/4 + n/8 + ...
+All elements of the sum are the results of integer division.
+
+Example
+25  =>  25 + 12 + 6 + 3 + 1 = 47
