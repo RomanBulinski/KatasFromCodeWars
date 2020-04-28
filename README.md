@@ -62,3 +62,19 @@ Examples
 Notes
 To keep the things simple, we'll consider that anything with a number in front of it is a drink: "1 bear" => "1 glass of water" or "1 chainsaw and 2 pools" => "3 glasses of water"
 The number in front of each drink lies in range [1; 9]
+
+
+*******************************************************************************
+
+Largest 5 digit number in a series
+In the following 6 digit number:
+283910
+91 is the greatest sequence of 2 consecutive digits.
+In the following 10 digit number:
+1234567890
+67890 is the greatest sequence of 5 consecutive digits.
+Complete the solution so that it returns the greatest sequence of five consecutive digits 
+found within the number given. The number will be passed in as a string of only digits. 
+It should return a five digit integer. 
+The number passed may be as large as 1000 digits.
+Adapted from 
