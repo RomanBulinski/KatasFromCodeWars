@@ -1,7 +1,11 @@
 public class ReturnTheFirstMmultiplesOfN {
 
     public static int[] multiples(int m, int n) {
-        // Code here!
+        int[] result = new int[m];
+        for(int i =0; i<m; i++){
+            result[i] = n * (i+1);
+        }
+        return result;
     }
 
 }
