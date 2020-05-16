@@ -86,3 +86,15 @@ There is enough money available on ATM in nominal value 10, 20, 50, 100, 200 and
 You are given money in nominal value of n with 1<=n<=1500.
 Try to find minimal number of notes that must be used to repay in dollars, or output -1 if it is impossible.
 Good Luck!!!
+
+*******************************************************************************++
+
+Return the first M multiples of N
+
+Implement a function, multiples(m, n), 
+which returns an array of the first m multiples of the real number n. 
+Assume that m is a positive integer.
+Ex.
+multiples(3, 5.0)
+should return
+[5.0, 10.0, 15.0]
