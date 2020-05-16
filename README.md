@@ -87,7 +87,7 @@ You are given money in nominal value of n with 1<=n<=1500.
 Try to find minimal number of notes that must be used to repay in dollars, or output -1 if it is impossible.
 Good Luck!!!
 
-*******************************************************************************++
+
 
 Return the first M multiples of N
 
@@ -98,3 +98,25 @@ Ex.
 multiples(3, 5.0)
 should return
 [5.0, 10.0, 15.0]
+
+*******************************************************************************++
+
+Split In Parts
+
+The aim of this kata is to split a given string into different 
+strings of equal size (note size of strings is passed to the method)
+
+Example:
+Split the below string into other strings of size #3
+
+'supercalifragilisticexpialidocious'
+
+Will return a new string
+'sup erc ali fra gil ist ice xpi ali doc iou s'
+Assumptions:
+
+String length is always greater than 0
+String has no spaces
+Size is always positive
+
+*******************************************************************************++
